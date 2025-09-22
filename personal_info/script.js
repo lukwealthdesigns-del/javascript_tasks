@@ -17,8 +17,14 @@ function displayInformation () {
     
 }
 
+let active_info = document.getElementById("btn-info");
+let active_age = document.getElementById("btn-age");
+
+
 document.getElementById("btn-info").onclick = function() {
     displayInformation();
+    active_info.style.backgroundColor = "blue"
+    active_age.style.backgroundColor = "grey"
     
     let information = document.getElementById("information")
     information.style.backgroundColor = "white"
@@ -41,4 +47,7 @@ function displayAge () {
 
 document.getElementById("btn-age").onclick = function() {
     displayAge();
+    active_age.style.backgroundColor = "blue"
+    active_info.style.backgroundColor = "grey"
+    
 }
